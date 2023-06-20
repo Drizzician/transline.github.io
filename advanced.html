@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Advanced Settings</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./main/css/styles.css">
+    
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        
+        <div class="menu-icon" onclick="openSidebar()">
+          Transline Limited
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+
+        </div>
+    
+        <div class="header-right">
+          <span id="jsclose" class="material-icons-outlined text-white ">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            Transline Limited
+            </div>
+        
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <p><strong>PRIMARY</strong></p>
+          <li class="sidebar-list-item">
+            <a href="./main/index.html">
+              <span class="material-icons-outlined hover:text-white">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="./ticketing.html">
+              <span class="material-icons-outlined hover:text-white">inventory_2</span> Ticketing
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="./parcel collection.html">
+              <span class="material-icons-outlined hover:text-white">redeem</span> Parcel Collection
+            </a>
+          </li>
+
+          <p><strong>TRIPS</strong> </p>
+          <li class="sidebar-list-item">
+            <a href="./history.html">
+              <span class="material-icons-outlined hover:text-white">history</span> Trips History
+            </a>
+          </li>
+          
+          <li class="sidebar-list-item">
+            <a href="./reports.html">
+              <span class="material-icons-outlined hover:text-white">poll</span> Reports
+            </a>
+          </li>
+
+          <p><strong>SETTINGS</strong></p>
+          <li class="sidebar-list-item">
+            <a href="./advanced.html">
+              <span class="material-icons-outlined hover:text-white">tune</span> Advanced
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="./settings.html">
+              <span class="material-icons-outlined hover:text-white">settings</span> Settings
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="./users.html">
+              <span class="material-icons-outlined hover:text-white ">group</span> Users
+            </a>
+          </li>
+        </ul>
+
+        <hr class="border-gray-400 my-2">
+      <footer class="fixed bottom-0 p-4" >
+        <p><strong> Logged in as: <br> Admin</strong></p>
+      </footer>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Advanced</p>
+        </div>
+
+        
+      </main>
+      <!-- End Main -->
+
+      <footer>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+       closeSidebar.addEventListener('dblclick', () => {
+      sidebar.classList.remove("sidebar-responsive");;
+      sidebarOpen = false;
+    });
+    </script>
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main/js/scripts.js"></script>
+  </body>
+</html>
